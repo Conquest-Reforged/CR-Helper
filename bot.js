@@ -40,8 +40,8 @@ client.on('message', msg => {
 
                 
                 'You\'re done! If a screen comes up showing you\'re missing dependencies, you may have installed Optifine incorrectly, or you just need to enable the resourcepack after continuing past this screen.'
-                
                 )
+                break
             case 'createServer':
                 msg.channel.send(
                     '**How to set up a server using Conquest Reforged server:**\n\n' +
@@ -52,22 +52,24 @@ client.on('message', msg => {
                     '2. You\'ll need to add the Conquest Reforged mod jar file to your server\'s mods folder *NB: Do not use the Conquest Reforged launcher jar file for this!*\n\n' +
 
                     '3. Ensure you\'re running your server with Forge and the correct Conquest Reforged jar. If not, you will see missing blocks in-game, no modded blocks in your creative inventory, and so on'
-                )
+                    )
+                    break
             case 'CTM':
                 msg.channel.send(
                     '**Why are my Connected Textures (oftened called CTM) not working?**\n\n' +
 
                     'There are a few possible reasons: \n' +
-                    '```1. You haven\'t installed and enabled the Conquest Reforged resourcepack. If you have installed a resourcepack, you may have installed the Vanilla Conquest resourcepack. Conquest Reforged and Vanilla Conquest are two very different things!```\n' +
-                    '```2. You haven\'t enabled Connected Textures by setting them to "Fancy" in the video settings.```\n' +
+                    '```1. You haven\'t installed and enabled the Conquest Reforged resourcepack (file name: "Conquest Reforged.zip"). If you have installed a resourcepack, you may have installed the Vanilla Conquest resourcepack (file name: Conquest_<version#>). Conquest Reforged and Vanilla Conquest are two very different things!```' +
+                    '```2. Either you haven\'t installed Optifine or you haven\'t enabled Connected Textures by setting them to "Fancy" in the video settings. If you need help installing Optifine, type "!help" for a selection of commands including installation guides.```' +
                     '```3. If you\'re running Minecraft 1.12.2 and have added or removed other block-adding mods, there will no longer be parity between the order in which your game sets each block\'s ID and the order in which your world-save\'s IDs have been set.' +
                     'If you must continue with your existing world, you can try pressing "f3 + t" to reload textures and CTM. If that doesn\'t work, the best option is to start a fresh world with all the block-adding mods you intend on using.' + 
-                    '*NB: The Conquest Reforged 1.12.2-1.15.2 converter, out of the box, will not support converting the blocks of other mods or in some cases worlds that have added other block-adding mods.```\n' +
+                    '*NB: The Conquest Reforged 1.12.2-1.15.2 converter, out of the box, will not support converting the blocks of other mods or in some cases worlds that have added other block-adding mods.```' +
                     'Please note that block transition textures from Vanilla Conquest are not implemented in Conquest Reforged. They are buggy and will only be implemented in later versions of the mod as needed.\n' +
                     'Conquest Reforged resourcepack download: https://www.curseforge.com/minecraft/texture-packs/conquest-reforged-resource-pack'
-                )
+                    )
             case 'help':
-                msg.channel.send('``!installMod1.15`` ``!createServer`` ``!CTM``')
+                msg.channel.send('Type the one of following for help: ``!installMod1.15`` ``!createServer`` ``!CTM``')
+                break
         }
     }
 })
