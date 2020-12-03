@@ -59,7 +59,7 @@ client.on('message', msg => {
                     '**Why are my Connected Textures (oftened called CTM) not working?**\n\n' +
 
                     'There are a few possible reasons: \n' +
-                    '```1. You haven\'t installed and enabled the Conquest Reforged resourcepack (file name: "Conquest Reforged.zip"). If you have installed a resourcepack, you may have installed the Vanilla Conquest resourcepack (file name: Conquest_<version#>). Conquest Reforged and Vanilla Conquest are two very different things!```' +
+                    '```1. You haven\'t installed and enabled the Conquest Reforged resourcepack (file name: "Conquest Reforged.zip"). If you have installed a resourcepack, you may have installed the Vanilla Conquest resourcepack (file name: Conquest_<version#>.zip). Conquest Reforged and Vanilla Conquest are two very different things!```' +
                     '```2. Either you haven\'t installed Optifine or you haven\'t enabled Connected Textures by setting them to "Fancy" in the video settings. If you need help installing Optifine, type "!help" for a selection of commands including installation guides.```' +
                     '```3. If you\'re running Minecraft 1.12.2 and have added or removed other block-adding mods, there will no longer be parity between the order in which your game sets each block\'s ID and the order in which your world-save\'s IDs have been set.' +
                     'If you must continue with your existing world, you can try pressing "f3 + t" to reload textures and CTM. If that doesn\'t work, the best option is to start a fresh world with all the block-adding mods you intend on using.' + 
