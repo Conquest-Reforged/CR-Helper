@@ -67,6 +67,7 @@ client.on('message', msg => {
                     'Please note that block transition textures from Vanilla Conquest are not implemented in Conquest Reforged. They are buggy and will only be implemented in later versions of the mod as needed.\n' +
                     'Conquest Reforged resourcepack download: https://www.curseforge.com/minecraft/texture-packs/conquest-reforged-resource-pack'
                     )
+                    break
             case 'help':
                 msg.channel.send('Type the one of following for help: ``!installMod1.15`` ``!createServer`` ``!CTM``')
                 break
