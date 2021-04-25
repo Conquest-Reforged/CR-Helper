@@ -32,7 +32,7 @@ client.on('message', msg => {
                 ' You can change the number in this argument to allocate more or less gigabytes of RAM to the game. *6G is the recommended minimum.* Finally, hit create, and try launching your new installation which should now accessible through the "Play" menu\'s drop down selection on bottom left.\n' +
                 '4. Download the "Alpha" .jar file from the respective link in the <#663934871202430976> channel.\n\n' +
 
-                '5. Download Optifine 1.15.2 preview version (https://optifine.net/adloadx?f=preview_OptiFine_1.15.2_HD_U_G5_pre1.jar).\n\n' +
+                '5. Download Optifine 1.15.2 (https://optifine.net/adloadx?f=OptiFine_1.15.2_HD_U_G6.jar).\n\n' +
 
                 '6. Navigate to your folder at `C:\\Users\\<user-name>\\AppData\\Roaming\\.minecraft\\mods` and drop the Alpha .jar file and the Optifine file into it.\n\n' +
 
